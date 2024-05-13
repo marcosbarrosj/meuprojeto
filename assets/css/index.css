@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	
+    
+}
+
+body{
+	background-color: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+#openMenu, #closeMenu {
+	
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+             /* menu */
+
+
+#menu {
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+	margin-top: 10px;
+    display: flex;
+    margin: 0;
+
+	
+}
+
+#menu a {
+	
+	margin:  2%;
+	font-size: 12pt;
+	color: #315630;
+    text-decoration: none;
+}
+
+
+#menu :hover{
+
+    color: #191414;
+
+
+}
+
+/* butão do menu */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Ajuste conforme necessário */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    padding: 5px 15px;
+    border: none;
+    background-color: #315630;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black;
+  }
+  
+  /* Ícone da lupa */
+  .search-box::before {
+    content: "\1F50D"; /* código unicode da lupa */
+    font-size: 12px;
+    padding: 8px;
+    background-color: #ffffff00;
+    color: #ffffff;
+  }
+
+
+  /* imagem*/
+
+  .content-imagem{
+
+	align-items: center;
+	text-align: center;}
+
+
+
+
+	/* texto abaixo da primeira foto*/
+
+    .content-texto{
+		display: flex;
+		 width: 30%;            }
+  
+	  .content-texto li {
+		margin-right: 15px;
+		display: flex;
+	  }
+		.content-texto a{
+		 text-decoration: none;
+		 margin-right: 20px;
+		 font-size: 12pt;
+		 color: #315630;
+		 background-color: transparent; /* Inicialmente transparente */
+		 transition: background-color 0.2s ease; /* Transição suave da cor */
+		}
+  
+  
+		
+		.content-texto a:hover{
+		  background-color: #a3c6a17d; /* Cor do sublinhado no hover */
+		}
+  
+  
+/* texto QUER ENCOTRAR UM LUGAR IDEAL*/
+		.container-texto ul {
+		  display: flex;
+		  justify-content: center;
+		}
+		
+		.container-texto ul {
+			display: flex;
+			justify-content: center;
+		  }
+	
+	
+		  .container-texto li{
+			display: flex;
+			
+	
+		  }
+		  .container-texto a{
+			text-decoration: none;
+		   margin-right: 20px;
+		   font-size: 12pt;
+		   color: #315630;
+		   
+	
+	  }
+	
+		 .container-texto a:hover{
+		  color: black;
+		 }
+	
+	
+	
+		 .container-texto a img{
+		color: #315630;
+		background-color: #315630; }
+	
+		  #container-texto{
+			width: auto;
+			text-align: center;
+			font-size: 20pt;
+			color: #315630;
+			-webkit-text-stroke: 1px #344c34; /* Adiciona uma borda  de 1px */
+	 
+		  }
+
+
+		  /* butão do menu dois */
+
+		  .search-boxdois {
+			display: flex;
+			width: 40%; /* Ajuste conforme necessário */
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			overflow: hidden;
+		  margin-left: 30%;
+		  }
+		  
+		  
+		  
+		  .search-boxdois div{
+			margin-left: 30px;
+		  
+		  }
+
+
+
+		  .content-imagem p{
+			margin:3% ;
+			text-align: left;
+			width: auto;
+			font-size: 15pt;
+			color: #315630;
+		   -webkit-text-stroke: 1px #344c34; /* Adiciona uma borda  de 1px */
+	
+	
+	
+	 
+	}
+	
+	
+		   /*container-imagem */
+	
+	
+		   .photo-container {
+			display: flex;
+			justify-content: center;
+	       
+		    }
+	
+		  .photo-container div{
+			margin-right: 3%;  }
+		  
+		  .photo {
+			text-align: center;
+			margin-right: 20px; /* Espaçamento entre as fotos */
+			transition: transform 0.3s ease; /* Adiciona uma transição suave */ }
+	
+		  .photo:hover{
+			transform: scale(1.1);  }
+	
+		 
+		  
+		  .photo img {
+			width: 200px; /* Ajuste o tamanho das fotos conforme necessário */
+			height: auto;
+			
+		  }
+		  
+		  .interactions {
+			margin-top: 2px;
+		  }
+		  
+		  .rating, .like, .caption {
+			margin-bottom: 2px;
+		  }
+		  
+		  .rating input {
+			display: none;
+		  }
+		  
+		  .rating label, .like label {
+			font-size: 24px;
+			color: #aaa;
+			cursor: pointer;
+		  }
+		  
+		  .rating input:checked ~ label, .like input:checked + label {
+			color: black;
+		  }
+		  
+		  .caption p {
+			font-size: 16px;
+			color: #333;
+			text-align: center;
+	
+		  }
+		  
+		  .like-count {
+			font-size: 16px
+			;color: #333; }  
+			
+			/* rodape da  fotos*/
+			.rodape ul{
+				display: flex; 
+				justify-content: end; }
+
+			.rodape li{
+				display: flex;
+				text-align: end;
+				margin-right: 1%;
+				font-size: 15pt;
+				cursor: pointer;
+				  transition: transform 0.3s ease;
+				      color: #315630; }
+		
+			  .rodape I:hover{ transform: translateY(-5px); 
+				/* Subir 5 pixels quando o mouse passar por cima */  }
+
+
+				
+                 /* parte final*/
+    
+				 footer { background-color: #d4d4d457; }
+
+
+				 .rodapeum {
+				   display: flex;
+				   text-decoration: none;
+				   margin-top: 20px;}
+				  
+				 .rodapeum li{
+				   display: flex;
+				   margin-bottom: 5px; }
+				 
+				 .rodapeum a{ 
+				   text-decoration: none;
+				   margin-right: 3px;
+				   text-decoration: none;
+				   margin-right: 20px;
+				   font-size: 12pt;
+				   color: #315630; }
+			 
+			 
+				 .rodapeum i{
+					margin-left: 4cm; 
+				   margin-bottom: 30px;
+				   padding-top: 50px;
+				   font-size: 16pt;  }
+			 
+				 .rodapedois{
+				   display: flex;
+				   text-align: end;}
+			 
+				 .rodapedois ul{
+				   display: flex;
+				   text-align: end; }
+				
+				   .rodapedois  li{
+				   text-align: end; }
+			 
+				 .rodapedois i{
+				   text-align: end; }
+			 
+			 
+				   #obra{
+				   color:  #315630;
+				   width: 200px;
+				   margin-left: 8cm;
+				   margin-top: 20px;}   
+				   
+				   #copy{
+					   color:  #315630;
+				   font-size: 10pt;
+				   text-align: center;
+				   margin: 0;}
+			 
+				 
+				   
+				   
+				   
+			 
+			 
+			  
+
+
+   
+
+
+
+
+            /*  mdia */
+
+
+@media only screen and (max-width: 700px) {
+	 body{
+		background-color: #f4f4f4;
+	 }
+	
+	
+	#openMenu, #closeMenu {
+		display: block;
+
+	}
+
+	#openMenu {
+		margin-left: auto;
+        
+        
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+        
+
+	}
+
+	#menu  {
+		position: fixed;
+		width: 100vw;
+        height: 100vh;
+        background-color: #11111188;
+        flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	#menu a {
+		margin: 3%;
+		color: white;
+
+
+	}
+
+
+	.content-texto a{
+		font-size: 9pt;}
+		
+
+		/* texto QUER ENCOTRAR UM LUGAR IDEAL*/
+		.container-texto ul {
+			
+			flex-direction: column;
+
+		  }
+
+		.container-texto a{
+			font-size: 9pt;
+
+		}
+
+		 
+		  #container-texto p{
+			font-size: 12pt;
+			width: 220px;
+			margin-left: 2cm;
+		  }
+		  
+		   /*container-imagem */
+	
+	
+		   .photo-container {
+			flex-direction: column;
+		     width: 100%; 
+			text-align: center;                        }
+	
+		  .photo-container img{
+			   width: 35%;
+			   margin-right: 20px;
+			  }
+
+			  .interactions {
+				margin-left: 3px;
+			  }
+
+			  .rating label, .like label {
+				font-size: 20px;
+				color: #aaa;
+				cursor: pointer;
+			  }
+             /* parte final*/
+
+			  .rodapeum li{
+				flex-direction: column;
+
+			} 
+
+		      .rodapeum div{
+				flex-direction: column;} 
+
+			.rodapeum a{ 
+			font-size: 9pt;}
+
+			.rodapedois i{
+				font-size: 15pt;
+				margin: 8px;
+				color: #315630; }
+			 #obra{
+				display: none;} 
+
+			  
+		  
+		 
+		 
+	  
+	  
+			
+
+
+
+
+
+
+
+
+
+
+
+}

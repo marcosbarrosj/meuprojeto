@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    position: relative;
+    background-color:#2d492c ;
+  }
+  
+  .imagem-opaca {
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+  }
+  
+  .content {
+    display: flex;
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical */
+    left: 50%; /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 90%;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+   
+ 
+    
+   
+  }
+  .content h1{
+    text-align: center;
+    color: white;
+    justify-content: center;
+  }
+  
+
+  
+.content div{
+    margin-right: 3%;
+}
+
+
+.content-texto{
+ margin-top: 30px;
+}
+
+.content-textoum{
+    padding: 20px ;
+    color: white;
+    font-size: 15pt;
+    background-color: #315630ab;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.3);
+
+
+
+
+}
+
+
+
+.content-falar{
+    padding: 10px;
+    background-color:#315630ab ;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.3);
+
+}
+
+#content-falar p{
+    width: 300px;
+    margin-left: 60px;
+}
+
+.content-falar button{
+    margin-top: 20px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #315630;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.3);
+
+}
+
+.content-falar a{
+    text-decoration: none;
+    color: white;
+
+}
+
+    #content-falar{
+        color: white;
+        font-size: 13pt;
+    }
+
+    #content-home{
+        margin-left: 30px;
+    }
+
+    #content-home a{
+        text-decoration: none;
+        color: white;
+        text-decoration: underline;
+        font-size: 18pt;
+    }
+
+    #content-home svg{
+        font-size: 30pt;
+    }
+
+
+.content-textodois{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 20px ;
+    color: white;
+    font-size: 15pt;
+    background-color: #315630ab;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.3);
+
+    
+}
+.content-textodois img{
+    margin-left: 70px;
+}
