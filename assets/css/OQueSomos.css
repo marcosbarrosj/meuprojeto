@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+padding: 0;
+margin: 0;
+}
+
+main {
+background: url("../img/cadastro.png") no-repeat center center;
+background-size: cover;
+height: 105vh;
+background-color:#2d492c ;
+position: relative;
+
+
+}
+    
+
+
+main section.container{
+display: grid;
+grid-template-columns: 50% 50%;
+margin-left: 10%;
+margin-right: 10%;
+gap: 10px;
+
+background: #2d492c17;
+padding: 10px 30px;
+box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+
+
+
+}
+
+main section.container .content{ 
+padding: 20px;
+background:#315630ab ;
+border-radius: 10px;
+
+
+
+
+
+}
+
+main section.container .content p{
+color: rgb(255, 255, 255);
+font-size: 13pt;
+padding: 5px;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+}
+
+main section.container .content .content-parte1{
+text-align: center;
+margin-top: 3px;
+padding: 5px;
+border-radius: 15px;
+background-color: rgba(240, 248, 255, 0.103);
+
+
+
+}
+main section.container .content .content-parte1 p{
+color: white;
+font-size: 12pt;
+}
+main section.container .content .content-parte1 a{
+text-decoration: none;
+color: white;
+font-size: 12pt;
+padding: 10px;
+}
+
+main section.container .content .content-parte1 button{
+margin-top: 10px;
+padding: 15px;
+background-color: #2d492c;
+border: none;
+border-radius: 20px;
+
+}
+main section.container .content .content-parte1 button a:hover{
+color: black;
+}
+main section.container .content  a{
+text-decoration: none;
+color: white;
+font-size: 15pt;
+}
+
+
+
+main section.container .content h1{
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 20pt;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+margin-bottom: 10px;
+
+}
+
+main section.container .content figure{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+main section.container{
+grid-template-columns: none;
+margin-left: 0;
+margin-right: 0;
+gap: 0px;
+top:0px;
+padding: 1px 0px;}
+
+
+main section.container #content {
+    background: url("../img/cadastro.png") no-repeat center center;
+    background-size: cover;  
+    padding:0px; 
+    }
+    main section.container #content  p{
+         
+        background:#315630ab ;
+        border-bottom: 1px solid white;
+        }
+
+        main section.container .content figure{
+            background:#315630ab ;
+    
+}
+main section.container .content {
+   border-radius: 0px;
+    }
+main section.container .content p{
+color: white;
+width: none;
+font-size: 12pt;
+
+}
+
+main section.container .content .content-parte1{
+margin-top: 5px;
+padding: 10px;
+border-radius: 15px;
+
+}
+main section.container .content .content-parte1 p{
+font-size: 12pt;
+}
+main section.container .content .content-parte1 a{
+
+font-size: 10pt;
+padding: 10px;
+}
+
+main section.container .content .content-parte1 button{
+margin-top: 10px;
+padding: 15px;
+background-color: #2d492c;
+border: none;
+border-radius: 20px;
+
+}
+
+main section.container .content h1{
+
+margin-top: 0;
+margin-bottom: 0;
+
+}}
