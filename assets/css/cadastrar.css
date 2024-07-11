@@ -15,6 +15,24 @@ position: relative;
 }
 
 
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #1E3932;;
+    border-radius: 10px;
+}
+    
+::-webkit-scrollbar-thumb:hover {
+    background: #01764A;
+}
+
+
+
+
+
 
 main section.container{
 display: grid;
