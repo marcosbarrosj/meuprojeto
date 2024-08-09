@@ -4,23 +4,6 @@ padding: 0;
 margin: 0;
 }
 
-/* Barra de rolagem */
-::-webkit-scrollbar {
-    width: 8px;
-}
-    
-::-webkit-scrollbar-thumb {
-    background: #1E3932;;
-    border-radius: 10px;
-}
-    
-::-webkit-scrollbar-thumb:hover {
-    background: #01764A;
-}
-
-
-
-
 main {
 background: url("../img/cadastro.png") no-repeat center center;
 background-size: cover;
@@ -106,7 +89,6 @@ main section.container .content  a{
 text-decoration: none;
 color: white;
 font-size: 15pt;
-text-decoration: underline;
 }
 
 
@@ -178,14 +160,6 @@ padding: 1px 0px;
 
 
 }
-
-main section.container .content{ 
-   
-    border-radius: 0px;
-  
-    }
-
-    
 main section.container .content p{
 color: white;
 width: none;

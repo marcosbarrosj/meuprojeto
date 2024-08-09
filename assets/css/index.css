@@ -3,34 +3,20 @@
 * {
 	margin: 0;
 	padding: 0;
+  box-sizing: border-box;
+
 	
     
 }
 
 body{
-	background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-/* Barra de rolagem */
-::-webkit-scrollbar {
-    width: 8px;
-}
-    
-::-webkit-scrollbar-thumb {
-    background: #1E3932;;
-    border-radius: 10px;
-}
-    
-::-webkit-scrollbar-thumb:hover {
-    background: #01764A;
-}
-
-
-
-
-
-
+           
+          /* responsivo */
 
 #openMenu, #closeMenu {
 	
@@ -41,477 +27,454 @@ body{
 	padding: 0px 5px 0px 5px;
 	cursor: pointer;
 	display: none;
+
 }
 
-             /* menu */
 
 
-#menu {
-	justify-content: center;
-	width: 100%;
-	margin: 0;
-	margin-right: 20px;
-	padding: 0;
-	margin-top: 10px;
-    display: flex;
+
+
+/* menu nav */
+
+header article{
+  display: none;
+}
+
+header nav img{
+  display: none;
+}
+header nav{
+    border-bottom: 1px solid #315630;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
     margin: 0;
+   
 
-	
 }
 
-#menu a {
-	
-	margin:  2%;
+header nav.container-nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+   
+
+
+
+}
+
+
+header nav.container-nav a{
 	font-size: 12pt;
 	color: #315630;
     text-decoration: none;
 }
 
 
-#menu :hover{
 
-    color: #191414;
+header nav.container-nav a:hover{
+    border-bottom: 1px solid #315630;
+}
 
+main{
+  width: 100%;
 
 }
 
-/* butão do menu */
 
-.search-box {
-    display: flex;
-    align-items: center;
-    width: 300px; /* Ajuste conforme necessário */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 8px 10px;
-    border: none;
-    outline: none;
-  }
-  
-  button[type="submit"] {
-    padding: 5px 15px;
-    border: none;
-    background-color: #315630;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: black;
-  }
-  
-  /* Ícone da lupa */
-  .search-box::before {
-    content: "\1F50D"; /* código unicode da lupa */
-    font-size: 12px;
-    padding: 8px;
-    background-color: #ffffff00;
-    color: #ffffff;
-  }
+main section figure{
+    text-align: center;
 
-
-  /* imagem*/
-
-  .content-imagem{
-
-	align-items: center;
-	text-align: center;}
-
-
-
-
-	/* texto abaixo da primeira foto*/
-
-    .content-texto{
-		display: flex;
-		 width: 30%;            }
-  
-	  .content-texto li {
-		margin-right: 15px;
-		display: flex;
-	  }
-		.content-texto a{
-		 text-decoration: none;
-		 margin-right: 20px;
-		 font-size: 12pt;
-		 color: #315630;
-		 background-color: transparent; /* Inicialmente transparente */
-		 transition: background-color 0.2s ease; /* Transição suave da cor */
-		}
-  
-  
-		
-		.content-texto a:hover{
-		  background-color: #a3c6a17d; /* Cor do sublinhado no hover */
-		}
-  
-  
-/* texto QUER ENCOTRAR UM LUGAR IDEAL*/
-		.container-texto ul {
-		  display: flex;
-		  justify-content: center;
-		}
-		
-		.container-texto ul {
-			display: flex;
-			justify-content: center;
-		  }
-	
-	
-		  .container-texto li{
-			display: flex;
-			
-	
-		  }
-		  .container-texto a{
-			text-decoration: none;
-		   margin-right: 20px;
-		   font-size: 12pt;
-		   color: #315630;
-		   
-	
-	  }
-	
-		 .container-texto a:hover{
-		  color: black;
-		 }
-	
-	
-	
-		 .container-texto a img{
-		color: #315630;
-		background-color: #315630; }
-	
-		  #container-texto{
-			width: auto;
-			text-align: center;
-			font-size: 20pt;
-			color: #315630;
-			-webkit-text-stroke: 1px #344c34; /* Adiciona uma borda  de 1px */
-	 
-		  }
-
-
-		  /* butão do menu dois */
-
-		  .search-boxdois {
-			display: flex;
-			width: 40%; /* Ajuste conforme necessário */
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			overflow: hidden;
-		  margin-left: 30%;
-		  }
-		  
-		  
-		  
-		  .search-boxdois div{
-			margin-left: 30px;
-		  
-		  }
-
-
-
-		  .content-imagem p{
-			margin:3% ;
-			text-align: left;
-			width: auto;
-			font-size: 15pt;
-			color: #315630;
-		   -webkit-text-stroke: 1px #344c34; /* Adiciona uma borda  de 1px */
-	
-	
-	
-	 
-	}
-	
-	
-		   /*container-imagem */
-	
-	
-		   .photo-container {
-			display: flex;
-			justify-content: center;
-	       
-		    }
-	
-		  .photo-container div{
-			margin-right: 3%;  }
-		  
-		  .photo {
-			text-align: center;
-			margin-right: 20px; /* Espaçamento entre as fotos */
-			transition: transform 0.3s ease; /* Adiciona uma transição suave */ }
-	
-		  .photo:hover{
-			transform: scale(1.1);  }
-	
-		 
-		  
-		  .photo img {
-			width: 200px; /* Ajuste o tamanho das fotos conforme necessário */
-			height: auto;
-			
-		  }
-		  
-		  .interactions {
-			margin-top: 2px;
-		  }
-		  
-		  .rating, .like, .caption {
-			margin-bottom: 2px;
-		  }
-		  
-		  .rating input {
-			display: none;
-		  }
-		  
-		  .rating label, .like label {
-			font-size: 24px;
-			color: #aaa;
-			cursor: pointer;
-		  }
-		  
-		  .rating input:checked ~ label, .like input:checked + label {
-			color: black;
-		  }
-		  
-		  .caption p {
-			font-size: 16px;
-			color: #333;
-			text-align: center;
-	
-		  }
-		  
-		  .like-count {
-			font-size: 16px
-			;color: #333; }  
-			
-			/* rodape da  fotos*/
-			.rodape ul{
-				display: flex; 
-				justify-content: end; }
-
-			.rodape li{
-				display: flex;
-				text-align: end;
-				margin-right: 1%;
-				font-size: 15pt;
-				cursor: pointer;
-				  transition: transform 0.3s ease;
-				      color: #315630; }
-		
-			  .rodape I:hover{ transform: translateY(-5px); 
-				/* Subir 5 pixels quando o mouse passar por cima */  }
-
-
-				
-                 /* parte final*/
     
-				 footer { background-color: #d4d4d457; }
+}
+main section figure img{
+  width: 400px;
+}
 
 
-				 .rodapeum {
-				   display: flex;
-				   text-decoration: none;
-				   margin-top: 20px;}
-				  
-				 .rodapeum li{
-				   display: flex;
-				   margin-bottom: 5px; }
-				 
-				 .rodapeum a{ 
-				   text-decoration: none;
-				   margin-right: 3px;
-				   text-decoration: none;
-				   margin-right: 20px;
-				   font-size: 12pt;
-				   color: #315630; }
-			 
-			 
-				 .rodapeum i{
-					margin-left: 4cm; 
-				   margin-bottom: 30px;
-				   padding-top: 50px;
-				   font-size: 16pt;  }
-			 
-				 .rodapedois{
-				   display: flex;
-				   text-align: end;}
-			 
-				 .rodapedois ul{
-				   display: flex;
-				   text-align: end; }
-				
-				   .rodapedois  li{
-				   text-align: end; }
-			 
-				 .rodapedois i{
-				   text-align: end; }
-			 
-			 
-				   #obra{
-				   color:  #315630;
-				   width: 200px;
-				   margin-left: 8cm;
-				   margin-top: 20px;}   
-				   
-				   #copy{
-					   color:  #315630;
-				   font-size: 10pt;
-				   text-align: center;
-				   margin: 0;}
-			 
-				 
-				   
-				   
-				   
-			 
-			 
-			  
-
-
-   
-
-
-
-
-            /*  mdia */
-
-
-@media only screen and (max-width: 700px) {
-	 body{
-		background-color: #f4f4f4;
-	 }
-	
-	
-	#openMenu, #closeMenu {
-		display: block;
-
-	}
-
-	#openMenu {
-		margin-left: auto;
-        
-        
-	}
-
-	#closeMenu {
-		position: fixed;
-		right: 15px;
-		top: 15px;
-        
-
-	}
-
-	#menu  {
-		position: fixed;
-		width: 100vw;
-        height: 100vh;
-        background-color: #11111188;
-        flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-		display: none;
-		opacity: 0;
-		transition: 0.3s;
-	}
-
-	#menu a {
-		margin: 3%;
-		color: white;
-
-
-	}
-
-
-	.content-texto a{
-		font-size: 9pt;}
-		
-
-		/* texto QUER ENCOTRAR UM LUGAR IDEAL*/
-		.container-texto ul {
-			
-			flex-direction: column;
-
-		  }
-
-		.container-texto a{
-			font-size: 9pt;
-
-		}
-
-		 
-		  #container-texto p{
-			font-size: 12pt;
-			width: 220px;
-			margin-left: 2cm;
-		  }
-		  
-		   /*container-imagem */
-	
-	
-		   .photo-container {
-			flex-direction: column;
-		     width: 100%; 
-			text-align: center;                        }
-	
-		  .photo-container img{
-			   width: 35%;
-			   margin-right: 20px;
-			  }
-
-			  .interactions {
-				margin-left: 3px;
-			  }
-
-			  .rating label, .like label {
-				font-size: 20px;
-				color: #aaa;
-				cursor: pointer;
-			  }
-             /* parte final*/
-
-			  .rodapeum li{
-				flex-direction: column;
-
-			} 
-
-		      .rodapeum div{
-				flex-direction: column;} 
-
-			.rodapeum a{ 
-			font-size: 9pt;}
-
-			.rodapedois i{
-				font-size: 15pt;
-				margin: 8px;
-				color: #315630; }
-			 #obra{
-				display: none;} 
-
-			  
-		  
-		 
-		 
-	  
-	  
-			
-
-
-
-
-
-
-
-
-
-
+main section.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+  gap: 10px;
 
 }
+
+main section.container .content{
+  border: 1px solid #315630;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+main section.container .content a{
+  text-decoration: none;
+  color: #315630;
+}
+main section.container .content a:hover{
+  background: #31563069;
+
+}
+
+
+/* <section class="container-two"> */
+
+
+main section.container-two{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+/* content PARTE 1 */
+main section.container-two .content h1{
+color: #315630;}
+main section.container-two .content-ativarMobile{
+  display: none;
+
+}
+/* content PARTE 2 */
+
+main section.container-two .content-notebook  {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 15pt;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+main section.container-two .content-notebook  a
+{text-decoration: none;
+  color: #315630;
+}
+
+main section.container-two .content-notebook  a:hover{
+  border-bottom: 1px solid #315630;
+}
+
+/* content PARTE 3 */
+
+
+
+main section.container-two .content-input input{
+  border: 1px solid #315630;
+  width: 40%;
+}
+main section.container-two .content-input button{
+  background-color: #315630;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* <section class="container-3"> */
+  main section.container-3 article p{
+    margin-top: 35px;
+    color: #315630;
+    font-size: 15pt;
+  } 
+
+main section.container-3 figure img{ 
+
+  width: 100%;
+}
+
+
+main section.container-3 article.content-fotos{
+  display: grid;
+  grid-template-columns: 25% 25% 25%  25%;
+  gap: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */ 
+  margin-top: 30px;
+}
+main section.container-3 article.content-fotos img{
+  border-radius: 10px;}
+
+
+main section.container-3 article.content-fotos :hover{
+  transform: scale(1.1);
+}
+
+main section.container-3 article figure p{
+  margin-top: 20px;
+  color: #315630;
+  font-size: 15pt;
+}
+
+
+/* estrelha */
+.interactions {
+  margin-top: 2px;
+  }
+  
+  .rating, .like, .caption {
+  margin-bottom: 2px;
+  }
+  
+  .rating input {
+  display: none;
+  }
+  
+  .rating label, .like label {
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+  }
+  
+  .rating input:checked ~ label, .like input:checked + label {
+  color: black;
+  }
+  
+  .caption p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+
+  }
+  
+  .like-count {
+  font-size: 16px
+  ;color: #333; }  
+  
+
+
+main section.container-3 article.content-Mobale{
+  display: none;
+}
+
+
+/* footer */
+
+footer{
+  background-color: #315630;
+  color: white;
+}
+
+footer section.container{
+  display: grid;
+  grid-template-columns: auto auto 30%;
+
+}
+
+
+footer section.container-mobile{
+  display: none;
+}
+
+footer section.container2-mobile{
+  display: none;
+}
+
+
+footer section.container .content{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+
+footer section.container .content a{
+  text-decoration: none;
+  color: white;
+}
+
+footer section.container .content p{
+  font-size: 10pt;
+}
+
+footer section.container2{
+text-align: center;}
+
+footer section.container2 figure{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16pt;
+}
+
+
+  @media only screen and (max-width: 999px) {
+    body{
+       background-color: #f4f4f4;
+    }
+   
+ 
+    header article {
+      background-color: #315630;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+
+    header article img{
+      width: 150px;
+    
+    }
+    header nav img{
+      display: block;
+    }
+   #openMenu, #closeMenu {
+       display: block;
+       z-index: 99;
+
+   }
+
+   #openMenu {
+       margin-left: auto;
+       z-index: 99;
+       color: #ffffff;
+
+       
+       
+   }
+
+   #closeMenu {
+    z-index: 99;
+
+       position: fixed;
+       right: 15px;
+       top: 10px;
+       color: #f4f4f4;
+
+       
+
+   }
+ 
+   #menu  {
+    z-index: 99;
+
+       position: fixed;
+       top:0;
+       height: 100vh;
+       width: 100vw;
+       background: #315630;
+       flex-direction: column;
+       align-items: center;
+       display: none;
+       opacity: 0;
+       transition: 0.5s;
+   }
+
+   #menu a {
+       color: white;
+
+
+   }
+
+        .container-slide img{
+          margin-top: 88px;
+        }
+
+
+.content-texto a{
+font-size: 9pt;}
+
+
+main section.container-two .content-ativarMobile{
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: #315630;
+box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+
+}
+
+main section.container-two .content-ativarMobile a{
+ text-decoration: none;
+ color: #ffffff;
+ font-size: 16pt;
+ padding: 10px;
+  
+  }
+
+  main section.container-two .content-ativarMobile a:hover{
+    color: #333;
+     
+     }
+
+main section.container-two .content-notebook
+{
+display: none;
+
+}
+      
+      
+      
+/* content PARTE 3 */
+
+main section.container-two .content-input input{
+  width: 70%;
+  margin: 20px;
+}
+      
+      
+
+
+main section.container-3 article.content-fotos{
+  display: none;
+  
+}
+
+
+main section.container-3 article.content-Mobale{
+  display: block;
+}
+
+main section.container-3 article.content-Mobale h2{
+text-align: center;
+color: #315630;
+font-size: 15pt;}
+
+
+
+
+/* footer */
+footer section.container{
+  display: none;
+}
+
+footer section.container2{
+  display: none;
+}
+
+footer section.container-mobile{
+  display: block;
+}
+
+footer section.container2-mobile{
+  display: block;
+}
+
+footer{
+  margin-top: 50px;
+}
+footer section.container-mobile article.content{
+  display: grid;
+  grid-template-columns: auto 40%;
+  padding: 10px;
+
+}
+footer section.container-mobile article.content a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+
+footer section.container2-mobile {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+  }

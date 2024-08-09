@@ -5,383 +5,143 @@ margin: 0;
 padding: 0;
 
 
+
 }
 
 body{
-background-color: #3156306b;
-}
-
-/* Barra de rolagem */
-::-webkit-scrollbar {
-width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-background: #1E3932;;
-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #01764A;
-}
-
-
-
-
-
-
-
-
-
-
-#openMenu, #closeMenu {
-
-border: none;
-background: none;
-font-size: 30px;
-font-weight: bold;
-padding: 0px 5px 0px 5px;
-cursor: pointer;
-display: none;
-}
-
-/* menu */
-
-
-#menu {
-justify-content: center;
-width: 100%;
-margin: 0;
-margin-right: 20px;
 padding: 0;
-margin-top: 10px;
-display: flex;
 margin: 0;
+}
+
+
+
+main {
+background: url("../img/cadastro.png") no-repeat center center;
+background-size: cover;
+height: 105vh;
+background-color:#2d492c ;
+position: relative;
 
 
 }
 
-#menu a {
 
-margin:  2%;
-font-size: 12pt;
-color: #315630;
-text-decoration: none;
-}
-
-
-#menu :hover{
-
-color: #191414;
+main section.container-notebook{
+display: grid;
+grid-template-columns: 50% 50%;
+width: 80vw;
+gap: 10px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
 
 
-}
-
-/* butão do menu */
-
-.search-box {
-display: flex;
-align-items: center;
-width: 300px; /* Ajuste conforme necessário */
-border: 1px solid #ccc;
-border-radius: 5px;
-overflow: hidden;
-}
-
-input[type="text"] {
-flex: 1;
-padding: 8px 10px;
-border: none;
-outline: none;
-}
-
-button[type="submit"] {
-padding: 5px 15px;
-border: none;
-background-color: #315630;
-color: #fff;
-cursor: pointer;
-}
-
-button[type="submit"]:hover {
-background-color: black;
-}
-
-/* Ícone da lupa */
-.search-box::before {
-content: "\1F50D"; /* código unicode da lupa */
-font-size: 12px;
-padding: 8px;
-background-color: #ffffff00;
-color: #ffffff;
-}
-
-/* Palavras*/
-
-
-.content-geral{
-display: flex;
-justify-content: center; }
-
-
-.content-geral div{
-margin-right: 15%; }
-
-
-
-
-.container-palavras {
-width: 400px;   
-
-}
-
-.container-palavras h1{
-color: #315630;
-margin-left: 10px;
-
-}
-
-
-.fomulario{
-background-color: #fff;
+background: #2d492c17;
 padding: 20px;
-border-radius: 20px;
-}
-.fomulario h1{
-color: #315630;}
-
-.fomulario label{
-color: #315630;
-
-}
-
-.fomulario input{
-border: #315630;
-}
-
-
-.content-email{
+box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
 text-align: center;
-justify-content: center;
-}
-.content-email P{
-padding: 20px;    
-width: 200px;
-margin-left: 40%; }
 
-
-#submit{
-text-align: center;
-}
-
-
-
-
-
-/* parte final*/
-
-footer { background-color: #d4d4d457; }
-
-
-.rodapeum {
-display: flex;
-text-decoration: none;
-margin-top: 20px;}
-
-.rodapeum li{
-display: flex;
-margin-bottom: 5px; }
-
-.rodapeum a{ 
-text-decoration: none;
-margin-right: 3px;
-text-decoration: none;
-margin-right: 20px;
-font-size: 12pt;
-color: #315630; }
-
-
-.rodapeum i{
-margin-left: 4cm; 
-margin-bottom: 30px;
-padding-top: 50px;
-font-size: 16pt;  }
-
-.rodapedois{
-display: flex;
-text-align: end;}
-
-.rodapedois ul{
-display: flex;
-text-align: end; }
-
-.rodapedois  li{
-text-align: end; }
-
-.rodapedois i{
-text-align: end; }
-
-
-#obra{
-color:  #315630;
-width: 200px;
-margin-left: 8cm;
-margin-top: 20px;}   
-
-#copy{
-color:  #315630;
-font-size: 10pt;
-text-align: center;
-margin: 0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  mdia */
-
-
-@media only screen and (max-width: 700px) {
-body{
-background-color: #3156306b;
-}
-
-
-#openMenu, #closeMenu {
-display: block;
-
-}
-
-#openMenu {
-margin-left: auto;
 
 
 }
 
-#closeMenu {
-position: fixed;
-right: 15px;
-top: 15px;
-
-
-}
-
-#menu  {
-position: fixed;
-width: 100vw;
-height: 100vh;
-background-color: #11111188;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 0;
+main section.container-mobile{
 display: none;
-opacity: 0;
-transition: 0.3s;
 }
 
-#menu a {
-margin: 3%;
+
+main section.container-notebook h1{
+font-size: 25pt;
 color: white;
+}
 
+main section.container-notebook h2{
+color: white;
+font-size: 16pt;
+border-bottom: 1px solid white;
+padding: 10px;
+}
+
+main section.container-notebook p{
+color: white;
+text-align: left;
+font-size: 12pt;
 }
 
 
-.content-texto a{
-font-size: 9pt;}
+main section.container-notebook article.content-parte1{
+padding: 20px;
+background:#315630ab ;
+border-radius: 10px;
 
-
-/* Palavras*/
-
-
-.content-geral{
-flex-direction: column; }
-
-.content-geral div{
-margin-top:3cm ;
-}
-
-.container-palavras {
-width: 280px;
-margin-left: 2cm;
-
-}
-
-.container-palavras h1 {
-margin-left: 2cm;
 
 
 }
 
-.fomulario{
-margin-left: 2cm;
+main section.container-notebook article.content-parte1 div{
+margin-top: 20px;
+padding: 10px;
+border-radius: 10px;
 
 }
 
+main section.container-notebook article.content-parte2{
+padding: 20px;
+background:#315630ab ;
+border-radius: 10px;
 
-.content-email{
-font-size: 10pt;
-margin-right: 5cm;
 
 
 }
-.content-email P{
-}
-
-
-
-
-
-
-
-
-
-/* parte final*/
-
-.rodapeum li{
+main section.container-notebook article.content-parte2 article{
+display: flex;
 flex-direction: column;
-
-} 
-
-.rodapeum div{
-flex-direction: column;} 
-
-.rodapeum a{ 
-font-size: 9pt;}
-
-.rodapedois i{
-font-size: 15pt;
-margin: 8px;
-color: #315630; }
-#obra{
-display: none;} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+margin-top: 20px;
 }
+
+
+main section.container-notebook article.content-parte2 article label{
+color: white;
+text-align: left;
+}
+
+main section.container-notebook article.content-parte2 article input{
+padding: 10px;
+border: none;
+}
+
+main section.container-notebook article.content-parte2  button{
+background-color: #315630;
+margin-top: 10px;
+padding: 10px;
+color: white;
+}
+
+
+            /*  mdia */
+
+
+            @media only screen and (max-width: 999px) {
+                
+main section.container-notebook{
+    display: block;
+    grid-template-columns: none;
+    width: none;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+    background: #2d492c17;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+    text-align: center;
+    
+    
+    
+    }
+               
+            }
